@@ -15,6 +15,40 @@ function remove(array, element) {
 }     
 
 
+// function remove (array, itemToRemove){
+//     let output = []
+//     for (let member of array) {
+//         if (member !== itemToRemove) {
+//             output.push(member)
+//         }
+//     }
+//     return output
+
+
+//return array.filter(member => member !== potentialMember)
+
+
+// function remove(array, potentialMember){
+//     let output = []
+//     for (let member of array) {
+//         if (member !== potentialMember){
+//             output.push(member)
+//         }
+//     }
+//     return output;
+//     }
+    
+    
+//     //since we increased i by 1 it will skip. So i-- will tell it to not increase. 
+//     array = array.slice()
+//     function remove(array, potentialMember){
+//     for (let idx = 0; idx < array.length; idx--){
+//         if (array[idx]=== potentialMember){
+//             array.splice(idx, 1)
+//             }
+//         }
+//         return array;
+//     }
 
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
@@ -73,6 +107,52 @@ function selectionSort(array){
     var arrayCopy = array.sort(function(a, b){return a-b});
     return arrayCopy;
 }
+
+//sort method needs to be told to sort a specific way otherwise it will work wierd. pass function within a function
+
+
+// function minimum(array{
+//     let smallest
+
+//     for (let item of array){
+//         if (smallest === undefined || smallest > item) {
+//             smallest = item
+//         }
+//     }
+//     return smallest
+// }
+
+
+// function removeOnce (array, itemToRemove){
+//     let idx = array.indexOf(itemToRemove)
+//     if (idx !==-1) {
+//         let arrayCopy = array.slice()
+//         return arrayCopy.splice(idx, 1)
+//     }
+//     return array
+// }
+
+// function selectionSort (array){
+//     let arrayCopy= array.slice()
+//     let sortedArray = []
+
+//     while (arrayCopy.length > 0) {
+//         let minVal = minimum(arrayCopy)
+//         sortedArray.push(minVal)
+//         let minValIdx = arrayCopy.indexOf(minVal)
+//         arrayCopy.splice(minValIdx, 1)
+
+//     }
+//     return sortedArray
+// }
+
+
+
+
+
+
+
+//search array, push the smallest number in the array into the new list. 
 
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
